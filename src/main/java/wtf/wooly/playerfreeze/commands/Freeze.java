@@ -53,10 +53,10 @@ public class Freeze implements CommandExecutor, TabCompleter {
                 loc.setY(y);
                 if (loc.getBlock().getType() != Material.AIR){
                     loc.setY(y + 1);
+                    target.teleport(loc);
                     break;
                 }
             }
-            target.teleport(loc);
             PlayerFreeze.frozenPlayers.add(target.getUniqueId());
         }else{
             target.sendMessage(formatMsg(plugin.getConfig().getString("unfrozen"), placeholders));
