@@ -1,16 +1,3 @@
-## Commands:
-- `/freeze <player>` - freeze a player
-- `/player-freeze reload` (alias: `/pf`) - reload config
-
-## Permissions:
-- `pf.use` - run `/freeze` command
-- `pf.immune` - immune to being frozen
-- `pf.notify` - see the frozen broadcast
-- `pf.admin` - permission to run `/pf reload` command
-
-<details><summary><b>Default config.yml</b></summary>
-
-```yaml
 # All messages follow the MiniMessage format. More info: https://docs.advntr.dev/minimessage/format.html
 
 # Message to send the player when they try to move while frozen
@@ -61,5 +48,3 @@ persist_across_relog: true
 log_out_commands:
   - "ban [username] Logging out while frozen"
   - "say [username] logged out while frozen!"
-```
-</br></details>

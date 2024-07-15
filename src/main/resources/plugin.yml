@@ -1,0 +1,16 @@
+name: PlayerFreeze
+main: wtf.wooly.playerfreeze.PlayerFreeze
+description: "A simple player freeze plugin."
+version: '1'
+website: https://modrinth.com/project/player-freeze
+author: Woolyenough
+api-version: 1.19
+
+commands:
+  player-freeze:
+    aliases:
+      - playerfreeze
+      - pf
+    permission: pf.admin
+  freeze:
+    permission: pf.use
